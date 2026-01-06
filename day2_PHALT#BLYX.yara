@@ -8,6 +8,7 @@ rule PHALT_BLYX_DCRAT
 		author = "Joshua Penny"
 		hash = "bf374d8e2a37ff28b4dc9338b45bbf396b8bf088449d05f00aba3c39c54a3731"
 		date = "2025-01-06"
+		reference = "https://www.securonix.com/blog/analyzing-phaltblyx-how-fake-bsods-and-trusted-build-tools-are-used-to-construct-a-malware-infection/"
 	strings:
 		$packer = "costura"		
 		$path1 = "C:\\Windows\\Temp" wide
@@ -19,5 +20,5 @@ rule PHALT_BLYX_DCRAT
 		#packer > 10 and
 		all of ($path*) and
 		filesize < 2MB and
-		dotnet.is_dotnet
+		pe.imports("mscoree.dll")
 }
