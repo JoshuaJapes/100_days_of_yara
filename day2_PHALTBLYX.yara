@@ -4,7 +4,7 @@ import "dotnet"
 rule PHALT_BLYX_DCRAT
 {
 	meta:
-		desc = "Detects DC RAT"
+		desc = "Detects DCRAT"
 		author = "Joshua Penny"
 		hash = "bf374d8e2a37ff28b4dc9338b45bbf396b8bf088449d05f00aba3c39c54a3731"
 		date = "2025-01-06"
