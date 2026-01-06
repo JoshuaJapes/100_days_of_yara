@@ -1,6 +1,6 @@
-rule Suspicious_MSBuild_Russian_Dropper_LooseHeader {
+rule MSBuild_Proj_Exclusions_and_Russian_text {
     meta:
-        desc = "Detects Suspicious MSBuild Dropper with Russian Messages and XML Header Matching"
+        desc = "Detects Suspicious Project files with Russian Messages, XML Header Matching and Windows Defender Exclusions"
 		author = "Joshua Penny"
 		date = "2025-01-06"
 		reference = "https://www.securonix.com/blog/analyzing-phaltblyx-how-fake-bsods-and-trusted-build-tools-are-used-to-construct-a-malware-infection/"

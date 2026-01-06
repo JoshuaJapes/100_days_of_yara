@@ -1,5 +1,4 @@
 import "pe"
-import "dotnet"
 
 rule PHALT_BLYX_DCRAT
 {
