@@ -7,6 +7,7 @@ rule CrazyHunters_Donut_Loader
         desc = "Detects Donut Loader (bb.exe) used by Crazyhunters"
         author = "@josh_penny"
         hash = "2cc975fdb21f6dd20775aa52c7b3db6866c50761e22338b08ffc7f7748b2acaa"
+        reference = "https://www.trellix.com/blogs/research/the-ghost-in-the-machine-crazyhunters-stealth-tactics/"
         date = "2026-01-08"
     strings:
         $pdb1 = "D:\\a\\_work\\1\\s\\artifacts\\obj\\coreclr\\windows.x64.Release\\dlls\\mscordac\\mscordaccore.pdb"
