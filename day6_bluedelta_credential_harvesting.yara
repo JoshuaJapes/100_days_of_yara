@@ -58,7 +58,7 @@ rule BlueDelta_MyFunction_Stage6 {
     condition:
         ($user and $oldPwd and $post) or ($user_hidden and $password and $post) // Match on either new or older HTML variant
 }
-rule BlueDelta_Confirmed_Incident {
+rule BlueDelta_Credential_Harvesting_Stages_3_6 {
     meta:
         desc = "A rule to detect Stages: 3, 4, 5, and 6 of the BlueDelta credential harvesting campaign: Initial Webhook, Hidden Form Element, JS Beacon, and MyFunction. Captures legacy HTML content pattern."
         author = "@josh_penny"
